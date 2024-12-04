@@ -1,4 +1,4 @@
-.boxDoados{
+.boxDoados {
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -6,19 +6,63 @@
     justify-content: space-evenly;
 }
 
-.boxBooks{
-   width: 85vw;
-   height: 60vh;
-   display: flex;
-   justify-content: space-evenly;
-   article{
-    border: solid 2px #005695;
-    width: 15vw;
-    height: 32vh;
+.boxBooks {
+    width: 85vw;
+    height: 60vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 15px;
-   }
+    justify-content: space-around;
+
+    article {
+        border: solid 2px #005695;
+        width: 17vw;
+        height: 32vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: 980px) {
+    .boxDoados {
+        justify-content: space-around;
+        height: auto;
+
+        h2{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .boxBooks {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        padding-bottom: 10px;
+
+        article {
+            width: 200px;
+            height: 230px;
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .boxDoados {
+        height: auto;
+        padding-bottom: 10px;
+
+        h2{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .boxBooks {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        padding-bottom: 10px;
+    }
 }
