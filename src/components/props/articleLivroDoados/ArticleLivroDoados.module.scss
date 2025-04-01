@@ -1,0 +1,47 @@
+.articleDoados {
+  border: solid 2px #005695;
+  width: 170px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  text-align: center;
+  margin: 1vw;
+  img {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .articleDoados {
+    width: 140px;
+    height: 230px;
+    img {
+      width: 80px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .articleDoados {
+    width: 120px;
+    height: 200px;
+    img {
+      width: 75.7px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
